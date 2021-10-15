@@ -1,0 +1,154 @@
+
+body{
+    background-color: #CECCCC;
+}
+#here{
+    background-color: #CECCCC;
+}
+body *{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+}
+
+
+/* ПАНЕЛЬ С ДАТОЙ */
+.h2{
+    font-weight: 100;
+}
+.list_data{
+    color: #7D7D7D;
+    border-bottom: 3px solid #CECCCC;
+    width: 70%;
+    margin: auto;
+    font-size: 12px;
+    box-shadow: 3px 1px 20px;
+
+}
+.imya_list_data  {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 5%;
+    padding: 3% 0%;    
+}
+.h2{
+    display: inline;
+    margin: auto 0;   
+}
+
+.data_imya_list_data{
+    text-align: left;
+}
+
+.docs_imya_list_data{
+    text-align: right;
+    margin: auto 0px auto auto;
+    vertical-align: bottom;
+}
+
+.sliderimg{
+    height: 20px;
+    padding-right: 10px;
+  }
+
+
+
+/* ПАНЕЛЬ ПРИХОД РАСХОД */
+.imya_prihod_rashod{
+    font-size: 15px;
+}
+.table_imya_prihod_rashod{
+    width: 100%;
+    color: #7D7D7D;
+}
+.th_nomer_rashoda{
+    text-align: left;
+    font-weight: 100;
+}
+.td_cost{
+    text-align: right;
+}
+.kazdii_prihod_rashod{
+    border-bottom: 1px solid #CECCCC;
+    padding: 2% 10%;
+    font-size: 10px;
+}
+.kolichectvo_tovarov{
+    margin-bottom: 0px;
+}
+.img_slider_items{
+    height: 15px;
+}
+
+
+/*  ПАНЕЛЬ СПИСОК ТОВАРОВ*/
+.list_spisok_tovarov{
+    display: none;
+    padding: 15px;
+    padding: 0px 15px 15px 15px;
+}
+
+.table_spisok_tovarov{
+    color:#000;
+    padding: 2% 0%;
+}
+.image{
+    height: 90px;
+    width: 90px;
+}
+.td_imya_tovara{
+    vertical-align: bottom;
+}
+.tr_kolichestvo_i_stoimosti{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width: 810px) {
+    .list_data{
+        width: 95%;
+    }
+}
+
+@media(max-width:580px) {
+    .list_data{
+        font-size: 9px;
+    }
+    .sliderimg{
+        height: 10px;
+        padding-right: 10px;
+      }
+    .kazdii_prihod_rashod{
+        padding: 2% 5%;
+    }
+    .imya_prihod_rashod{
+        font-size: 10px;
+    }
+    .table_imya_prihod_rashod{
+        font-size: 10px;
+    }
+    .table_spisok_tovarov{
+        font-size: 12px;
+    }
+    .image{
+        height: 50px;
+        width: 50px;
+    }
+    .tr_kolichestvo_i_stoimosti{
+        font-size: 15px;
+    }
+
+@media(max-width:360px) {
+    .list_data{
+        width: 99%;
+    }
+    .td_imya_tovara{
+        font-size: 10px;
+    }
+    .tr_kolichestvo_i_stoimosti{
+        font-size: 10px;
+    }
+}
+}

@@ -1,0 +1,6 @@
+select dc.date, dt.name as namerp, dc.id, p.image, p.name, p.price, r.quantity, p.removed from docs dc left join docTypes dt on dc.typeId=dt.id left join rows r on r.docId = dc.id left join products p on p.id = r.productId where dc.removed = 0 and dt.removed = 0 order by dc.date asc; 
+
+
+
+sqlite-tools-osx-x86-3360000/sqlite3 database.db3 '.mode json' '.once out.json' 'select dc.date, dt.name, dc.id, p.image, p.name, p.price, r.quantity, p.removed from docs dc left join docTypes dt on dc.typeId=dt.id left join rows r on r.docId = dc.id left join products p on p.id = r.productId where dc.removed = 0 and dt.removed = 0 order by dc.date asc;'
+
